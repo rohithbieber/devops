@@ -1,5 +1,9 @@
 pipeline {
 	agent any
+	tools{
+		mvn "MAVEN3"
+		jdk "oracleJDK8"
+	}
 	stages{
 		stage ('fetch code'){
 			steps {
